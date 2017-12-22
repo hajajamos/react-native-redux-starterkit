@@ -2,7 +2,6 @@ import React from "react";
 import { Image } from "react-native";
 import { Container, Content, Text, List, ListItem } from "native-base";
 import PropTypes from "prop-types";
-const routes = ["Home1"];
 
 const SideBar = ({ routes, navigation }) => {
 	return(
@@ -41,10 +40,11 @@ const SideBar = ({ routes, navigation }) => {
 				</Content>
 			</Container>
 	);
-}
+};
 
 SideBar.propTypes = {
-	navigation: PropTypes.object.isRequired
+	navigation: PropTypes.object.isRequired,
+	routes: PropTypes.array.isRequired
 };
 
 export default SideBar;

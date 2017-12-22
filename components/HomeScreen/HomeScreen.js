@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Header, Title, Left, Icon, Right, Button, Body, Content, Text, Card, CardItem } from "native-base";
-import styles from "../../stylesheets/style";
+import styles from "../Common/commonStyle";
 import PropTypes from "prop-types";
 
 const HomeScreen = ({ DrawerOpen }) =>
