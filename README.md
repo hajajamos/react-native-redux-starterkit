@@ -1,4 +1,4 @@
-eact-native-redux-starterkit
+React-native-redux-starterkit
 
 This is a starter-kit/boilerplate for creating a cross platform application.
 
