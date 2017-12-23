@@ -16,7 +16,7 @@ class HomeScreenPage extends React.Component {
 
 	render() {
 		return(
-			<HomeScreen DrawerOpen={this.openDrawer} />
+			<HomeScreen openDrawer={this.openDrawer} />
 		);
 	}
 }
