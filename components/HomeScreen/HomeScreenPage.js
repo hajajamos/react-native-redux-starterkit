@@ -7,16 +7,16 @@ import PropTypes from "prop-types";
 class HomeScreenPage extends React.Component {
 	constructor(props, context) {
 		super(props, context);
-		this.DrawerOpen = this.DrawerOpen.bind(this);
+		this.openDrawer = this.openDrawer.bind(this);
 	}
 
-	DrawerOpen() {
+	openDrawer() {
 		this.props.navigation.navigate("DrawerOpen");
 	}
 
 	render() {
 		return(
-			<HomeScreen DrawerOpen={this.DrawerOpen} />
+			<HomeScreen DrawerOpen={this.openDrawer} />
 		);
 	}
 }

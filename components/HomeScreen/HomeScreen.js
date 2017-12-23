@@ -3,13 +3,13 @@ import { Container, Header, Title, Left, Icon, Right, Button, Body, Content, Tex
 import styles from "../Common/commonStyle";
 import PropTypes from "prop-types";
 
-const HomeScreen = ({ DrawerOpen }) =>
+const HomeScreen = ({ openDrawer }) =>
 	(<Container>
 		<Header>
 			<Left>
 				<Button
 					transparent
-					onPress={DrawerOpen}>
+					onPress={openDrawer}>
 					<Icon name="menu" />
 				</Button>
 			</Left>
@@ -22,23 +22,20 @@ const HomeScreen = ({ DrawerOpen }) =>
 			<Card>
 				<CardItem>
 					<Body>
-						<Text>Chat App to talk some awesome people!</Text>
+						<Text>Hello world!</Text>
 					</Body>
 				</CardItem>
 			</Card>
 			<Button full rounded dark
+				onPress={openDrawer}
 				style={styles.commonButton}>
-				<Text>Chat With People</Text>
-			</Button>
-			<Button full rounded primary
-				style={styles.commonButton}>
-				<Text>Goto Profiles</Text>
+				<Text>Click me to see the menu</Text>
 			</Button>
 		</Content>
 	</Container>);
 
 HomeScreen.propTypes = {
-	DrawerOpen: PropTypes.func.isRequired
+	openDrawer: PropTypes.func.isRequired
 };
 
 export default HomeScreen;

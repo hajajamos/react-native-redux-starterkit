@@ -8,8 +8,8 @@ import getStore from './redux/store/configureStore';
 import TestReduxPage from './components/TestRedux/TestReduxPage';
 
 const routes = {
-	"TestRedux": { screen: TestReduxPage },
 	"Home": { screen: HomeScreen },
+	"TestRedux": { screen: TestReduxPage },
 };
 
 const HomeScreenRouter = DrawerNavigator(routes, {
