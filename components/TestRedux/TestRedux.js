@@ -12,8 +12,7 @@ import {
 	Card,
 	Title,
 	CardItem,
-	Text,
-	Input
+	Text
 } from "native-base";
 import styles from "./../Common/commonStyle";
 import { TextInput } from 'react-native';

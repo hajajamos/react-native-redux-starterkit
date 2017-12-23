@@ -13,7 +13,8 @@ const routes = {
 };
 
 const HomeScreenRouter = DrawerNavigator(routes, {
-	contentComponent: props => (<SideBar navigation={props.navigation} routes={Object.keys(routes)} />)
+	contentComponent: navProps => 
+	(<SideBar navigation={navProps.navigation} routes={Object.keys(routes)} />)
 });
 
 const store = getStore();

@@ -10,7 +10,7 @@ class TestReduxPage extends React.Component {
 		super(props, context);
 		this.state = {
 			"numberToAdd": 0
-		}
+		};
 		//Bind the methods for context "this".
 		this.drawerOpen = this.drawerOpen.bind(this);
 		this.incrementNumberFunc = this.incrementNumberFunc.bind(this);
@@ -21,7 +21,7 @@ class TestReduxPage extends React.Component {
 		this.props.navigation.navigate("DrawerOpen");
 	}
 
-	incrementNumberFunc(e) {
+	incrementNumberFunc() {
 		this.props.actions.addNumberToState(this.state.numberToAdd);
 	}
 

@@ -19,7 +19,6 @@
     "typescript-eslint-parser": "^9.0.0"
   },
   "scripts": {
-    "android": "react-native run-android",
     "jest": "node node_modules/jest/bin/jest.js",
     "jest:watch": "jest --watch",
     "lint": "esw . --color",
@@ -84,7 +83,7 @@
       "no-lone-blocks": 0,
       "jsx-quotes": 1,
       "react/display-name": [
-        1,
+        0,
         {
           "ignoreTranspilerName": false
         }
