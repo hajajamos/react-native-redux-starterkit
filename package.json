@@ -3,24 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@types/enzyme": "^3.1.6",
+    "@types/jest": "^21.1.9",
     "babel-eslint": "^8.0.3",
+    "babel-jest": "^22.0.4",
     "concurrently": "^3.5.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.11.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx": "0.0.2",
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-react-native": "^3.2.0",
     "eslint-watch": "3.1.2",
-    "jest": "^21.2.1",
+    "jest": "^22.0.4",
     "prop-types": "^15.6.0",
+    "react-native-mock-render": "^0.0.19",
     "react-native-scripts": "1.7.0",
-    "react-test-renderer": "16.0.0-beta.5",
+    "react-test-renderer": "^16.2.0",
     "redux-immutable-state-invariant": "^2.1.0",
     "typescript-eslint-parser": "^9.0.0"
   },
   "scripts": {
     "jest": "node node_modules/jest/bin/jest.js",
+    "test": "jest",
     "jest:watch": "jest --watch",
+    "test:watch": "jest:watch",
     "lint": "esw . --color",
     "lint:watch": "npm run lint -- --watch",
     "watch": "concurrently -k -r -s first \"npm run jest:watch\" \"npm run lint:watch\""
@@ -39,7 +47,8 @@
     "preset": "react-native",
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-router-native)/"
-    ]
+    ],
+    "setupTestFrameworkScriptFile": "./scripts/initTests.js"
   },
   "eslintConfig": {
     "root": true,
@@ -125,7 +134,7 @@
       "import/extensions": 0,
       "react/self-closing-comp": 1,
       "react/sort-comp": 1,
-      "no-case-declarations":0
+      "no-case-declarations": 0
     },
     "globals": {}
   }
