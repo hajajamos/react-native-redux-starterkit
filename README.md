@@ -2,6 +2,8 @@ React-native-redux-starterkit
 
 This is a starter-kit/boilerplate for creating a cross platform application.
 
+# ***STILL ON DEVELOP!!***
+
 # Dev tools:
 1. react-native - Creating a cross platform application.
 2. redux - An application state managment.
