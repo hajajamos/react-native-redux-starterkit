@@ -16,6 +16,14 @@ function init() {
 
 
 describe("<HomeScreen/>", () => {
+	it("should contains 'title'", () => {
+		//Arrange
+		const { wrapper } = init();
+		const title = wrapper.find(Title).getElement();
+
+		//Assert
+		expect(title).not.toBeNull();
+	});
 	it("should contains 'title' with HomeScreen", () => {
 		//Arrange
 		const { wrapper } = init();
