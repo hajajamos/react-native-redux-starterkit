@@ -8,6 +8,7 @@ const HomeScreen = ({ openDrawer }) =>
 		<Header>
 			<Left>
 				<Button
+					id="openDrawer"
 					transparent
 					onPress={openDrawer}>
 					<Icon name="menu" />
@@ -27,6 +28,7 @@ const HomeScreen = ({ openDrawer }) =>
 				</CardItem>
 			</Card>
 			<Button full rounded dark
+				id="openDrawer2"
 				onPress={openDrawer}
 				style={styles.commonButton}>
 				<Text>Click me to see the menu</Text>
