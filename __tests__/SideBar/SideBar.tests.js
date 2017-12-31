@@ -54,6 +54,33 @@ describe("<SideBar />", () => {
         
 		//Assert
 		expect(listLength).toBe(props.routes.length);
+	});
+	
+	it("Click on 'ListItem' should call to navigate", () => {
+		//Arrange
+        const { wrapper, props } = init();
+		const listItem = wrapper.find(Controllers.ListItem).first();
+		expect(props.navigation.navigate).toHaveBeenCalledTimes(0);
+		
+		//Act
+		listItem.props().onPress();
+
+		//Assert
+		expect(props.navigation.navigate).toHaveBeenCalledTimes(1);
+	});
+	
+	it("Click on 'ListItem' should call to navigate with specific route", () => {
+		//Arrange
+        const { wrapper, props } = init();
+		const listItem = wrapper.find(Controllers.ListItem).first();
+		expect(props.navigation.navigate).toHaveBeenCalledTimes(0);
+		
+		//Act
+		listItem.props().onPress();
+
+		//Assert
+		expect(props.navigation.navigate).toHaveBeenCalledTimes(1);
+		expect(props.navigation.navigate).toBeCalledWith(props.routes[0]);
     });
     
 });
