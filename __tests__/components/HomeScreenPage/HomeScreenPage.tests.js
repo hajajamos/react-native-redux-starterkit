@@ -1,7 +1,7 @@
 import React from "react";
 import * as enzyme from "enzyme";
-import HomeScreenPage from './../../components/HomeScreen/HomeScreenPage';
-import HomeScreen from "../../components/HomeScreen/HomeScreen";
+import HomeScreenPage from '../../../components/HomeScreen/HomeScreenPage';
+import HomeScreen from "../../../components/HomeScreen/HomeScreen";
 
 function init() {
 	const props = {

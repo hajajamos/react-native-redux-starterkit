@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "../../components/SideBar/SideBar"
+import SideBar from "../../../components/SideBar/SideBar"
 import * as enzyme from "enzyme";
 import * as Controllers from 'native-base';
 

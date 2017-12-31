@@ -1,7 +1,7 @@
 import "react-native";
 import * as Jest from "jest";
 import React from "react";
-import HomeScreen from "../../components/HomeScreen/HomeScreen"
+import HomeScreen from "../../../components/HomeScreen/HomeScreen"
 import * as enzyme from "enzyme";
 import { Title } from 'native-base';
 
