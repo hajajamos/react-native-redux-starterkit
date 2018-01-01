@@ -4,7 +4,9 @@
 	"private": true,
 	"devDependencies": {
 		"@types/enzyme": "^3.1.6",
-		"@types/jest": "^21.1.9",
+		"@types/jest": "^22.0.0",
+		"@types/react": "^16.0.31",
+		"@types/react-native": "^0.51.7",
 		"babel-eslint": "^8.0.3",
 		"babel-jest": "^22.0.4",
 		"concurrently": "^3.5.1",
@@ -22,6 +24,7 @@
 		"react-native-scripts": "1.7.0",
 		"react-test-renderer": "^16.2.0",
 		"redux-immutable-state-invariant": "^2.1.0",
+		"typed-native-base": "^0.0.4",
 		"typescript-eslint-parser": "^9.0.0"
 	},
 	"scripts": {
