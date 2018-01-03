@@ -77,14 +77,15 @@ describe("<TestReduxPage/>", () => {
 		//Arrange
 		const { wrapper, props, store } = init();
 		const firstState = wrapper.state().numberToAdd;
+		const expected = 10;
 
 		//Act
 		const testRedux = wrapper.find(TestRedux);
-		testRedux.props().onChangeText("10");
+		testRedux.props().onChangeText(expected);
 
 		//Assert
 		expect(wrapper.state().numberToAdd).not.toEqual(firstState);
-		expect(wrapper.state().numberToAdd).toEqual(10);
+		expect(wrapper.state().numberToAdd).toEqual(expected);
     });
 
 });
