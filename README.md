@@ -2,8 +2,6 @@ React-native-redux-starterkit
 
 This is a starter-kit/boilerplate for creating a cross platform application.
 
-# ***STILL ON DEVELOP!!***
-
 # Dev tools:
 1. react-native - Creating a cross platform application.
 2. redux - An application state managment.
@@ -25,3 +23,8 @@ This is a starter-kit/boilerplate for creating a cross platform application.
 3. Watch - ```npm run watch``` or ```yarn watch``` - Run testing and lint with watcher flag.
 4. A. android - ```react-native run-android``` - Deploy android app.
 4. B. ios - ```react-native run-ios``` - Deploy ios app.
+
+# Bonus for visual studio code:
+1. Upload launch.json for react-native debugging.
+2. Upload launch.json for Jest (testing) debugging.
+3. Upload enzyme and jest auto-complete (intellisense). 
