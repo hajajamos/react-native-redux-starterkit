@@ -5,6 +5,8 @@
 	"devDependencies": {
 		"@types/enzyme": "^3.1.6",
 		"@types/jest": "^22.0.0",
+		"@types/lodash": "^4.14.92",
+		"@types/prop-types": "^15.5.2",
 		"@types/react": "^16.0.31",
 		"@types/react-native": "^0.51.7",
 		"babel-eslint": "^8.0.3",
@@ -37,6 +39,7 @@
 		"watch": "concurrently -k -r -s first \"npm run jest:watch\" \"npm run lint:watch\""
 	},
 	"dependencies": {
+		"lodash": "^4.17.4",
 		"native-base": "^2.3.3",
 		"react": "16.0.0-beta.5",
 		"react-native": "^0.49.5",
