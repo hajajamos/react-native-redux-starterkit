@@ -1,4 +1,4 @@
-import AppNavigation from '../../components/ReduxNavigation/AppNavigation';
+import AppNavigation from "../../components/ReduxNavigation/AppNavigation";
 
 /**
  * A reducer to handle the navigation state by redux.

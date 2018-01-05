@@ -15,7 +15,7 @@ import {
 	Text
 } from "native-base";
 import styles from "./../Common/commonStyle";
-import { TextInput } from 'react-native';
+import { TextInput } from "react-native";
 
 const TestRedux = ({ drawerOpen, numberToShow, incrementNumberFunc, onChangeText }) =>
 	(<Container>

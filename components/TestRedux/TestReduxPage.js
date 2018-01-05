@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import * as actions from "../../redux/actions/testActions";
 import { bindActionCreators } from "redux";
 import PropTypes from "prop-types";
-import TestRedux from './TestRedux';
+import TestRedux from "./TestRedux";
 
 export class TestReduxPage extends React.Component {
 	constructor(props, context) {
