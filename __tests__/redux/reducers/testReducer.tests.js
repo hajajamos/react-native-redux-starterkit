@@ -5,6 +5,11 @@ import initialState from "../../../redux/store/initialState";
 import * as actionsTypes from "../../../redux/actions/actionsTypes";
 import * as _ from "lodash";
 
+/**
+ * Initialize the necessary objects for this test file.
+ * 
+ * @returns An object contains component wrapper and the properties required by the wrapper.
+ */
 function init() {
 	const testReducer = TestReducer;
 	return { testReducer };

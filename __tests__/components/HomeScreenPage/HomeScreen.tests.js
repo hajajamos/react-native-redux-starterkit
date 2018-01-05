@@ -5,6 +5,11 @@ import HomeScreen from "../../../components/HomeScreen/HomeScreen"
 import * as enzyme from "enzyme";
 import { Title } from 'native-base';
 
+/**
+ * Initialize the necessary objects for this test file.
+ * 
+ * @returns An object contains component wrapper and the properties required by the wrapper.
+ */
 function init() {
 	const props = {
 		openDrawer: jest.fn()
@@ -13,7 +18,6 @@ function init() {
 	const wrapper = enzyme.shallow(<HomeScreen {...props} />);
 	return { wrapper, props };
 }
-
 
 describe("<HomeScreen/>", () => {
 	it("should contains 'title'", () => {

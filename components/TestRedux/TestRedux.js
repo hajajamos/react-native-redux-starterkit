@@ -17,6 +17,14 @@ import {
 import styles from "./../Common/commonStyle";
 import { TextInput } from "react-native";
 
+/**
+ * A view (stateless) component of "TestRedux" page.
+ * 
+ * @param {function} { drawerOpen } function to open the nav drawer.
+ * @param {number} { numberToShow } a number to show by the component.
+ * @param {function} { incrementNumberFunc } increment the given number (numberToShow). 
+ * @param {function} { onChangeText } update the local state of the parent component on every change.
+ */
 const TestRedux = ({ drawerOpen, numberToShow, incrementNumberFunc, onChangeText }) =>
 	(<Container>
 	<Header>

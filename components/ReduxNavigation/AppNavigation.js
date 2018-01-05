@@ -13,6 +13,7 @@ const noTransitionConfig = () => ({
 	}
 });
 
+//The routes of the nav drawer.
 const drawerStackRoutes = {
 	"HomeScreen": { screen: HomeScreen },
 	"TestReduxPage": { screen: TestReduxPage },

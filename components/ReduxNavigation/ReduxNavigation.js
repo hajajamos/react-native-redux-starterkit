@@ -3,6 +3,11 @@ import * as ReactNavigation from "react-navigation";
 import { connect } from "react-redux";
 import AppNavigation from "./AppNavigation";
 
+/**
+ * Navigation component works with redux.
+ * @param reduxProps contains nav and dispatch for redux. 
+ * @returns AppNavigation with navigation prop.
+ */
 function ReduxNavigation(reduxProps) {
 	const { dispatch, nav } = reduxProps;
 	const navigation = ReactNavigation.addNavigationHelpers({

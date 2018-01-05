@@ -3,6 +3,11 @@ import { Image } from "react-native";
 import { Container, Content, Text, List, ListItem } from "native-base";
 import PropTypes from "prop-types";
 
+/**
+ * The view component of the side navigation.
+ * @param {array} { routes } array of routes names.
+ * @param {object} { navigation } navigation object.
+ */
 const SideBar = ({ routes, navigation }) => {
 	return(
 		<Container>
