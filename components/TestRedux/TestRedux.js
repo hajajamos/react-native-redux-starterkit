@@ -36,15 +36,17 @@ const TestRedux = ({ drawerOpen, numberToShow, incrementNumberFunc, onChangeText
 		<Card>
 			<CardItem>
 				<Body>
-					<Text>NumberToShow:{numberToShow}</Text>
+					<Text>numberToShow</Text>
+					<Text id="NumberToShow">{numberToShow}</Text>
 				</Body>
 			</CardItem>
 		</Card>
-					<TextInput keyboardType="phone-pad" 
-								name="numberToAdd" 
+					<TextInput keyboardType="phone-pad"
+								name="numberToAdd"
 								onChangeText={onChangeText}/>
 		
 		<Button full rounded dark
+			id="incrementNumberButton"
 			style={styles.commonButton}
 			onPress={incrementNumberFunc}>
 			<Text>ClickMe</Text>

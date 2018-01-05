@@ -1,7 +1,7 @@
 import "react-native";
 import * as Jest from "jest";
 import React from "react";
-import HomeScreen from "../../components/HomeScreen/HomeScreen"
+import HomeScreen from "../../../components/HomeScreen/HomeScreen"
 import * as enzyme from "enzyme";
 import { Title } from 'native-base';
 
@@ -16,6 +16,14 @@ function init() {
 
 
 describe("<HomeScreen/>", () => {
+	it("should contains 'title'", () => {
+		//Arrange
+		const { wrapper } = init();
+		const title = wrapper.find(Title).getElement();
+
+		//Assert
+		expect(title).not.toBeNull();
+	});
 	it("should contains 'title' with HomeScreen", () => {
 		//Arrange
 		const { wrapper } = init();

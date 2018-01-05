@@ -5,11 +5,11 @@ import { bindActionCreators } from "redux";
 import PropTypes from "prop-types";
 import TestRedux from './TestRedux';
 
-class TestReduxPage extends React.Component {
+export class TestReduxPage extends React.Component {
 	constructor(props, context) {
 		super(props, context);
 		this.state = {
-			"numberToAdd": 0
+			numberToAdd: 0
 		};
 		//Bind the methods for context "this".
 		this.drawerOpen = this.drawerOpen.bind(this);
@@ -42,12 +42,12 @@ class TestReduxPage extends React.Component {
 }
 
 TestReduxPage.propTypes = {
-	navigation: PropTypes.object,
+	navigation: PropTypes.object.isRequired,
 	test1: PropTypes.number.isRequired,
 	actions: PropTypes.object.isRequired
 };
 
-function mapStateToProps(state) {
+export function mapStateToProps(state) {
 	return {
 		test1: state.firstSlice.test1
 	};

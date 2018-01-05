@@ -1,7 +1,7 @@
 //import liraries
 import React from "react";
 import HomeScreen from "./HomeScreen.js";
-import PropTypes from "prop-types";
+import { PropTypes } from "prop-types";
 
 // create a component
 class HomeScreenPage extends React.Component {
