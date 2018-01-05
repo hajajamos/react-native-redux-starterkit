@@ -5,6 +5,11 @@ import TestRedux from './../../../components/TestRedux/TestRedux';
 import { Title } from 'native-base';
 import { TextInput } from 'react-native';
 
+/**
+ * Initialize the necessary objects for this test file.
+ * 
+ * @returns An object contains component wrapper and the properties required by the wrapper.
+ */
 function init() {
 	const props = {
 		drawerOpen: jest.fn(),
@@ -52,5 +57,4 @@ describe("<TestRedux />", () => {
 		//Assert
 		expect(props.incrementNumberFunc).toHaveBeenCalledTimes(1);
 	});
-	
 });

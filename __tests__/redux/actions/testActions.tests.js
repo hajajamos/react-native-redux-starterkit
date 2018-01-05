@@ -3,6 +3,11 @@ import * as enzyme from "enzyme";
 import * as testActions from "../../../redux/actions/testActions";
 import * as actionsTypes from "../../../redux/actions/actionsTypes";
 
+/**
+ * Initialize the necessary objects for this test file.
+ * 
+ * @returns An object contains component wrapper and the properties required by the wrapper.
+ */
 function init() {
 	const state = {
 		"firstSlice": {

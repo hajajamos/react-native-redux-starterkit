@@ -1,8 +1,8 @@
 import { AppRegistry } from "react-native";
 import React from "react";
-import { Provider } from 'react-redux';
-import getStore from './redux/store/configureStore';
-import ReduxNavigation from './components/ReduxNavigation/ReduxNavigation';
+import { Provider } from "react-redux";
+import getStore from "./redux/store/configureStore";
+import ReduxNavigation from "./components/ReduxNavigation/ReduxNavigation";
 
 const store = getStore();
 

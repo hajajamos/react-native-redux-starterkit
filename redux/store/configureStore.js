@@ -1,8 +1,8 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
-import { createLogger } from 'redux-logger';
-import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
-import getRootReducer from './../reducers/rootReducer';
+import { createLogger } from "redux-logger";
+import reduxImmutableStateInvariant from "redux-immutable-state-invariant";
+import getRootReducer from "./../reducers/rootReducer";
 
 export default function getStore() {
 	const logger = createLogger();

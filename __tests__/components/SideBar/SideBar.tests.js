@@ -3,6 +3,11 @@ import SideBar from "../../../components/SideBar/SideBar"
 import * as enzyme from "enzyme";
 import * as Controllers from 'native-base';
 
+/**
+ * Initialize the necessary objects for this test file.
+ * 
+ * @returns An object contains component wrapper and the properties required by the wrapper.
+ */
 function init() {
 	const props = {
 		routes: [

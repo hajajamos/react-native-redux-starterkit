@@ -3,6 +3,10 @@ import { Container, Header, Title, Left, Icon, Right, Button, Body, Content, Tex
 import styles from "../Common/commonStyle";
 import PropTypes from "prop-types";
 
+/**
+ * This is the view (stateless) component of "HomePage"
+ * @param {function} { openDrawer } open the drawer by click. 
+ */
 const HomeScreen = ({ openDrawer }) =>
 	(<Container>
 		<Header>
