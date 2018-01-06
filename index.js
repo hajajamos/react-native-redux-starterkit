@@ -6,7 +6,7 @@ import ReduxNavigation from "./src/components/ReduxNavigation/ReduxNavigation";
 
 const store = getStore();
 
-const test = () => {
+const App = () => {
 	return(
 		<Provider store={store}>
 				<ReduxNavigation/>
@@ -14,4 +14,4 @@ const test = () => {
 	);
 };
 
-AppRegistry.registerComponent("test", () => test);
+AppRegistry.registerComponent("test", () => App);
