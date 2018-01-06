@@ -1,7 +1,6 @@
 {
-	"name": "MyProject",
-	"version": "0.1.0",
-	"private": true,
+	"name": "react-native-redux-starterkit",
+	"version": "1.0.0",
 	"devDependencies": {
 		"@types/enzyme": "^3.1.6",
 		"@types/jest": "^22.0.0",
