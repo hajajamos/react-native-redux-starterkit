@@ -2,12 +2,17 @@ React-native-redux-starterkit
 
 This is a starter-kit/boilerplate for creating a cross platform application.
 
+# requires:
+1. IDE with javascript support - like Atom, visual studio code etc...
+2. Android SDK (23).
+3. To be familiar with react, redux and javascript.
+
 # Dev tools:
 1. react-native - Creating a cross platform application.
-2. redux - An application state managment.
+2. redux - An application state management.
 3. eslint - Lint JS. Reports syntax and style issues.
-4. npm Scripts - Glues all this together.
-5. Jest - Testing js code.
+4. Jest - Testing js code.
+5. npm Scripts - Glues all this together.
 
 # How to start?
 1. Clone the repository.
